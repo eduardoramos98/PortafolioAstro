@@ -1,0 +1,32 @@
+---
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import Layout from "../layouts/Layout.astro" 
+import SocialPill from "../components/SocialPill.astro"
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import GitHub from "../components/icons/GitHub.astro"
+import Mail from "../components/icons/Mail.astro"
+import Subtitle from "@/components/Subtitle.astro";
+---
+<Layout title="Contactame">
+<Header/>
+<div class="pb-6">
+    <Subtitle subtitle="/ Contactame"/>
+</div>
+<nav class="flex gap-x-8 justify-center ">
+    <SocialPill href="https://www.linkedin.com/in/carlos-eduardo-ramos-martinez-61a9bb159/">
+        <LinkedIn class="w-6 h-6" />
+        <p class="text-white ps-1">LinkedIn</p>
+    </SocialPill>
+    <SocialPill href="https://github.com/eduardoramos98">
+        <GitHub class="w-6 h-6"/>
+        <p class="text-white ps-1">Git Hub</p>
+    </SocialPill>
+    <SocialPill href="mailto:eduardo.c.ramos@gmail.com">
+        <Mail class="w-6 h-6"/>
+        <p class="text-white ps-1">Correo eléctrico</p>
+    </SocialPill>
+
+</nav>
+<Footer/>
+</Layout>
